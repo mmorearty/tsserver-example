@@ -1,0 +1,15 @@
+{
+  "name": "tsserver-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "./run.sh"
+  },
+  "keywords": [],
+  "author": "Mike Morearty <mike@morearty.com>",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.6.1"
+  }
+}

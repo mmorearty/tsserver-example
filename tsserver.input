@@ -1,0 +1,4 @@
+{ "seq": 0, "type": "request", "command": "open",                   "arguments": { "file": "$PWD/example.ts" } }
+{ "seq": 1, "type": "request", "command": "quickinfo",              "arguments": { "file": "$PWD/example.ts", "line": 2, "offset": 11 } }
+{ "seq": 2, "type": "request", "command": "getApplicableRefactors", "arguments": { "file": "$PWD/example.ts", "startLine": 2, "startOffset": 5, "endLine": 2, "endOffset": 20 } }
+{ "seq": 3, "type": "request", "command": "getEditsForRefactor",    "arguments": { "file": "$PWD/example.ts", "startLine": 2, "startOffset": 5, "endLine": 2, "endOffset": 20, "refactor": "Extract Symbol", "action": "function_scope_1" } }

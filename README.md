@@ -47,7 +47,9 @@ This is the output, modified so that the JSON is pretty-printed.
 Note that when you try it yourself with `./run.sh`, you will see that each
 response is preceded by a `Content-Length:` header, followed by `\r\n\r\n`.
 
-In response to the `"open"` command, these two events come back:
+In response to the `"open"` command, these two events come back (note, these
+are `"type": "event"`, not `"type": "response"` -- there is no actual response
+to the `"open"` command):
 
 ```json
 {
@@ -150,6 +152,11 @@ In response to the `"getApplicableRefactors"` command, this response comes back:
   ]
 }
 ```
+
+In that response, notice that the `"body"` has `"name": "Extract Symbol"`, and
+inside that, one of the `"actions"` has `"name": "function_scope_1"`. If you
+look at `tsserver.input`, you will see both of those in the next command that I
+send, which is `"getEditsForRefactor"`.
 
 In response to the `"getEditsForRefactor"` command, this response comes back:
 

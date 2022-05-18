@@ -10,6 +10,6 @@
   "author": "Mike Morearty <mike@morearty.com>",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^2.6.1"
+    "typescript": "^4.6.4"
   }
 }
